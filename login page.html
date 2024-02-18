@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.jpg" type="image/x-icon"/>
+    <title>「✦LoginPage ✦」</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: url('task.jpg') no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .log {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logform h2 {margin-left: 90px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            cursor:no-drop;
+        }
+        .logform {
+            color: rgb(8, 8, 8);
+            font-size: medium;
+            font-weight: 600;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            padding: 50px 80px;
+        }
+        .downbar{
+            margin-left: 5px;
+            padding:5px;
+            border-radius: 5px;
+        }
+
+        .container {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        input {
+            height: 30px;
+            width: 250px;
+            border-radius: 5px;
+            border-style: solid;
+
+        }
+
+        input:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: rgba(0, 0, 0, 0.6);
+            text-decoration: none;
+            transition: 0.2s linear;
+            font-weight:600;
+           font-size:medium;
+        }
+
+        a:hover {
+            color: #000;
+        }
+        .forgot a{
+           margin-left:110px;
+           color: rgba(0, 0, 0, 0.6);
+           font-weight:600;
+           font-size:medium;
+           transition: 0.3s;
+        } 
+        .forgot:hover a{
+            color: #000;
+        }
+
+        p{
+            margin-top: 20px;
+            margin-left: 7px;
+            transition: 0.5s linear;
+            color: rgba(0, 0, 0, 0.6);
+            cursor: pointer ;
+            font-weight:600;
+           font-size:medium;
+        }
+        p:hover {
+            color: #000;
+        }
+
+        button {
+            background-color: #000;
+            font-size: large;
+            font-weight: bolder;
+            color: #fff;
+            padding: 10px;
+            width: 168px;
+            border-style: solid;
+            margin-top: 20px;
+            border-radius: 7px;
+            margin-left: 50px;
+            transition: 0.2s linear;
+        }
+
+        button:hover {
+            color: #000;
+            background-color: white;
+            border-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="log">
+        <form class="logform">
+            <table class="tab">
+                <th>
+                    <h2>Login</h2>
+                </th>
+                <tr>
+                    <td class>Enter your Position</td>
+                    <td >
+                        <select class="downbar">
+                            <option>ADMIN👨‍⚖️</option>
+                            <option>SUPERVISOR👷‍♂️</option>
+                            <option> EMPLOYEE👨‍🔧</option>
+                        </select>
+                    </td>
+            </table>
+            <div class="container">
+                <label for="Username">Username</label><br>
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="container">
+                <label for="Password">Password</label><br>
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="forgot">
+                <a href="#" target="_blank">Forgot password ?</a>
+            </div>
+            <button>Login</button>
+            <p>
+                Don't have an account? 
+                <a href="#" target="_blank">Register</a>
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>
